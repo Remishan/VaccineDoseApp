@@ -79,7 +79,7 @@ namespace VaccineDoseApp
                 {
                     MessageBox.Show("Your Slot is Booked");
                 }
-                else if (Convert.ToInt32(txtAge.Text) >= 55 && rbtnYes.Checked == true)
+                else if (Convert.ToInt32(txtAge.Text) >= 55 && rbtnYes.Checked == true )
                 {
                     MessageBox.Show("No Vaccine");
                 }
@@ -87,6 +87,10 @@ namespace VaccineDoseApp
                 {
                     MessageBox.Show("Please Enter Medicine dosage between 3.3 to 4.5 ");
                 }
+            }
+            if (Convert.ToInt32(txtAge.Text) < 4)
+            {
+                MessageBox.Show("No Vaccine");
             }
             txtName.Clear();
             txtAge.Clear();
