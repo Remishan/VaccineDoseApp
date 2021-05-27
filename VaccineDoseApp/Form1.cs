@@ -22,6 +22,7 @@ namespace VaccineDoseApp
             if (txtName.Text == "" && txtAge.Text == "" && txtEmail.Text == "" && txtMedicine.Text == "")
             {
                 MessageBox.Show("Please fill all fields");
+                return;
             }
             if (Convert.ToDouble(txtMedicine.Text) > 10)
             {
